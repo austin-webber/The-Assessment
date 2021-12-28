@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Shrub - Small Texture
+* source:	https://sketchfab.com/3d-models/low-poly-shrub-small-texture-6e16ec47d7c246a69efffb9e857165ed
+* author:	lemedesign (https://sketchfab.com/lemedesign)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Shrub - Small Texture" (https://sketchfab.com/3d-models/low-poly-shrub-small-texture-6e16ec47d7c246a69efffb9e857165ed) by lemedesign (https://sketchfab.com/lemedesign) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
