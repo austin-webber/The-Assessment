@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT DEFINES SEVERAL PUBLIC METHODS THAT THE END CUTSCENE CALLS AT DIFFERENT KEYFRAMES TO ENABLE AND DISABLE TEXT
+
 public class AnimationEventListener : MonoBehaviour
 {
     public GameObject welcomeText;

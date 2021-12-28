@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT HANDLES THE FIRST PERSON PLAYER CONTROLLER
+
 // Using RequireComponent so that I can reuse this script in the future. It makes the script dependent on a component and adds it to the object
 [RequireComponent(typeof(CharacterController))]
 

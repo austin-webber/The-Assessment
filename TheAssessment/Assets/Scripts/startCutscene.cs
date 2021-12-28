@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT HANDLES THE END CUTSCENE LOGIC
+
 public class startCutscene : MonoBehaviour
 {
     public GameObject Player;
@@ -9,6 +11,7 @@ public class startCutscene : MonoBehaviour
     public GameObject cursor;
     public AudioSource forestAudio;
 
+    // Start the cutscene when the player walks into the box collider trigger
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -22,6 +25,7 @@ public class startCutscene : MonoBehaviour
         }
     }
 
+    // After the cutscene has finished, the game automatically quits
     IEnumerator FinishCutscene()
     {
         yield return new WaitForSeconds(28.017f);

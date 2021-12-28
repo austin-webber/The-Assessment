@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT DEFINES THE KEY TYPES
+
 public class Key : MonoBehaviour
 {
     [SerializeField] private KeyType keyType;
@@ -12,6 +14,7 @@ public class Key : MonoBehaviour
         gameObject.tag = "PickUp";
     }
 
+    // Creating an enumerator that allows me to assign a type to each key
     public enum KeyType
     {
         Red,

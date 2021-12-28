@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT ALLOWS THE PLAYER TO PICK UP KEYS OF DIFFERENT TYPES
+
 public class KeyHolder : MonoBehaviour
 {
     public List<Key.KeyType> keyList;
@@ -46,6 +48,7 @@ public class KeyHolder : MonoBehaviour
             GameObject objectHit = hit.transform.gameObject;
             Key key = objectHit.GetComponent<Key>();
 
+            // If the object the ray hits is able to be picked up, and the Player presses F, add the key to a Key List, destroy the object, and play an audio clip
             if (objectHit.CompareTag("PickUp"))
             {
                 if (Input.GetKeyDown(KeyCode.F))

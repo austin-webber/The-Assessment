@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS SCRIPT HANDLES DOOR FUNCTIONALITY
+
 public class Door : MonoBehaviour
 {
+    // Declaring variables
     public AnimationCurve openSpeedCurve = new AnimationCurve(new Keyframe[] { new Keyframe(0, 1, 0, 0), new Keyframe(0.8f, 1, 0, 0), new Keyframe(1, 0, 0, 0) });
     public float openSpeedMultiplier = 2.0f;
     public float doorOpenAngle = 90.0f;
@@ -23,6 +26,7 @@ public class Door : MonoBehaviour
 
     [SerializeField] private DoorType doorType;
 
+    // Creating an enumerator that allows me to assign a type to each door
     public enum DoorType
     {
         Red,
@@ -74,6 +78,7 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // When the collider on this object hits the player, you are allowed to open the door
+        // Also checks to make sure that the Player is holding the key type that matches the door type
         if (other.CompareTag("Player"))
         {
             KeyHolder keyHolder = player.GetComponent<KeyHolder>();
